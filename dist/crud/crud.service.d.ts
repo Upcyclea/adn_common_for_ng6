@@ -10,10 +10,10 @@ export declare abstract class CrudService<M extends ActiveRecord> extends ApiSer
     readonly singularEndpoint: string;
     getEndpoint(route?: string | number): string;
     getSingularEndpoint(route?: string | number): string;
-    get(query?: any): Observable<M[]>;
-    view(id: number, query?: any): Observable<M>;
-    create(data: M): Observable<M>;
-    update(id: number, data: M): Observable<M>;
-    remove(id: number): Observable<M>;
+    get<M>(query?: any): Observable<M[]>;
+    view<M>(id: number, query?: any): Observable<M>;
+    create<M>(data: M): Observable<M>;
+    update<M>(id: number, data: M): Observable<M>;
+    remove<M>(id: number): Observable<M>;
     buildModel<M>(data: any): M;
 }
