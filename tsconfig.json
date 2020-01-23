@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "noLib": false,
+    "lib": [
+      "es2015"
+    ],
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules"
+    ],
+    "types": [
+      "node"
+    ]
+  },
+  "files": [
+    "src/ng2-adn-common.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "platforms"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}
